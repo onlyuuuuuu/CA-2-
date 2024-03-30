@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Hangman Game!</h1>
+        <p>Hangman is a classic word-guessing game. Here are the rules:</p>
+        <ul>
+            <li>You will have 2 minutes to guess the word.</li>
+            <li>For each correct letter guessed, you earn points.</li>
+            <li>For each incorrect guess, you lose points.</li>
+            <li>Your goal is to guess the word correctly before time runs out.</li>
+            <div id="score">
+            <li>Score</li>
+            <li>0 chances - 100 points</li>
+            <li>1 chance - 80 points</li>
+            <li>2 chances - 60 points</li>
+            <li>3 chance - 40 points</li>
+            <li>4 chances - 20 points</li>
+            <li>5 chance - 10 points</li>
+            <li>6 chances - 0 points</li>
+            </div>
+        </ul>
+        <form id="quizForm">
+            <label for="username">Enter your name:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <button type="button" onclick="redirectToPlayArea()">Next</button>
+        </form>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
